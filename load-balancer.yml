@@ -11,5 +11,3 @@ spec:
       nodePort: 31000
   selector:
     app: nginx-testing
-  status:
-    loadBalancer: {}
