@@ -1,19 +1,19 @@
-# name: CI/CD Pipeline for React App to AWS EKS
+name: CI/CD Pipeline for React App to AWS EKS
 
-# on: 
-#   push:
-#     branches: ['master', 'main']
-#   pull_request:
-#     branches: ['master', 'main']
+on: 
+  push:
+    branches: ['master', 'main']
+  pull_request:
+    branches: ['master', 'main']
 
-# permissions: 
-#   contents: write   
-# env:
-#   DOCKERHUB_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-#   DOCKERHUB_TOKEN: ${{ secrets.DOCKER_PASSWORD }}
-#   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}  
-#   AWS_DEFAULT_REGION: "us-east-1"    
+permissions: 
+  contents: write   
+env:
+  DOCKERHUB_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+  DOCKERHUB_TOKEN: ${{ secrets.DOCKER_PASSWORD }}
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}  
+  AWS_DEFAULT_REGION: "us-east-1"    
 
 # jobs:
 #   build:
